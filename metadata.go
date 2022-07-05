@@ -8,7 +8,6 @@ import (
 
 // Socks addr type
 const (
-	AtypIPv4       = 1
 	AtypDomainName = 3
 	AtypIPv6       = 4
 
@@ -27,7 +26,6 @@ type NetWork int
 
 func (n NetWork) String() string {
 	if n == TCP {
-		return "tcp"
 	}
 	return "udp"
 }
